@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { ICONS } from '../data/icons';
+import ICONS from '../data/icons';
 import {
   getAuth,
   getFirestore,
@@ -145,8 +145,7 @@ const PostComments = ({ post }) => (
     {post.comments.map((comment, index) => (
       <View key={index} style={{ flexDirection: 'row', marginTop: 5 }}>
         <Text style={{ color: 'white' }}>
-          <Text style={{ fontWeight: 600 }}>{comment.user}</Text>
-          {' '}
+          <Text style={{ fontWeight: 600 }}>{comment.user}</Text>{' '}
           {comment.comment}
         </Text>
       </View>

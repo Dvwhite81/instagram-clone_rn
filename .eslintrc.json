@@ -21,6 +21,7 @@
     "react-native/no-inline-styles": "off",
     "max-lines": ["error", { "max": 500 }],
     "no-console": "off",
-    "no-alert": "off"
+    "no-alert": "off",
+    "react/no-array-index-key": "off"
   }
 }
